@@ -24,6 +24,8 @@ import { User } from './User';
     @ManyToOne(type => User)
     user?: User;
     @RelationId((likes: Likes) => likes.user)
+    
+    @Field()
     @Column('int',{nullable:true})
     userId?: number;
 
