@@ -1,0 +1,22 @@
+query posts{
+    posts{
+        id
+        description,
+        image
+        user{
+            id,
+            avatar,
+            username
+        },
+        comments{
+            id
+        },
+        likes{
+            id
+            likesCounter
+            userId
+            
+        }
+        
+    }
+}

@@ -1,0 +1,12 @@
+query search($data:String!){
+    search(data:$data){
+        id
+        size,
+        title,
+        images,
+        price,
+        description
+       
+       
+    }
+}

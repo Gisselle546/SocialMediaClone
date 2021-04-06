@@ -1,0 +1,12 @@
+query productId($data:Float!){
+    productId(data:$data){
+        id
+        size,
+        title,
+        images,
+        price,
+        description
+       
+       
+    }
+}

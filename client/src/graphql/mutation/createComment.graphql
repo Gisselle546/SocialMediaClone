@@ -1,0 +1,7 @@
+mutation createComment($description:String!,$postid:Int!){
+    createComment(data:{description:$description,postid:$postid}){
+        id,
+        description
+            
+        }
+    }

@@ -1,0 +1,14 @@
+query comments{
+    comments{
+        id
+        description,
+        user{
+            id,
+            avatar,
+            username
+        },
+        post{
+            id
+        }
+    }
+}

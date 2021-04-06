@@ -1,0 +1,10 @@
+query likesbypost($postId:Int!){
+    likesbypost(data:{postId:$postId}){
+         id
+        user{
+            id
+            username
+        },
+       
+    }
+}

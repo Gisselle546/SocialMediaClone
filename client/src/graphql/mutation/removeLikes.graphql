@@ -1,0 +1,8 @@
+mutation removeLikes($postId:Int!){
+    
+    removeLikes(data:{postId:$postId})
+    
+}
+
+
+   

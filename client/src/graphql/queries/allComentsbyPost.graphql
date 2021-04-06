@@ -1,0 +1,12 @@
+query commentsbypost($postId:Int!){
+    commentsbypost(data:{postId:$postId}){
+         id
+        description,
+        user{
+            id,
+            avatar,
+            username
+        },
+       
+    }
+}

@@ -1,0 +1,8 @@
+mutation createPosts($description:String!,$image:String!){
+    createPosts(data:{description:$description,image:$image}){
+        id,
+        description,
+        image
+            
+        }
+    }

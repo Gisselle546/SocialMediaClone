@@ -1,0 +1,7 @@
+mutation createLikes($likescounter:Int!,$postid:Int!){
+    createLikes(data:{likescounter:$likescounter,postid:$postid}){
+        id,
+        likesCounter
+            
+        }
+    }
