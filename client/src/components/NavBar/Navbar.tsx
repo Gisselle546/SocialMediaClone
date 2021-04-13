@@ -26,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
         alignContent:"center",
         marginTop:"2rem",
         width:"1000px",
+        [`@media ${device.mobile}`]:{
+        
+          display:'none'
+          
+        }
         
       
     },
@@ -55,6 +60,14 @@ const WhiteTooltip = withStyles({
         cursor:"pointer",
         boxShadow: "0 0 5px 1px rgba(var(--jb7,0,0,0),.0975)",
       },
+      [`@media ${device.mobile}`]:{
+        
+       display:'none'
+       
+     }
+
+
+
   })(Tooltip);
 
 

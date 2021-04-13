@@ -7,7 +7,8 @@ export const AppWrapper = styled.div({
     gridTemplateColumns: "20vw 1fr",
     [`@media ${device.mobile}`]:{
        display:'flex',
-       flexDirection:"column-reverse"
+       flexDirection:"column-reverse",
+       
     }
     
 })

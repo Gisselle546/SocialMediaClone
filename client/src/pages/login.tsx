@@ -5,6 +5,8 @@ import { TextField, Button } from '@material-ui/core';
 import {useLoginMutation} from '../generated/graphql';
 import Grid from '@material-ui/core/Grid';
 import {useStore} from '../context/auth';
+import { Hidden } from "@material-ui/core";
+import {device} from '../utils/device';
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -14,7 +16,11 @@ const useStyles = makeStyles((theme: Theme) =>
         display:"flex",
         justifyContent:"center",
         marginTop:"7rem",
-       
+        [`@media ${device.mobile}`]:{
+          width:"100vw",
+          height:"100vh",
+          margin:0
+       }
 
     },
 
@@ -26,7 +32,10 @@ const useStyles = makeStyles((theme: Theme) =>
     alignContent:"center",
     padding:"6rem",
     boxShadow:"10px 10px 5px #aaaaaa",
-    backgroundColor:"rgb(204,0,0)"
+    backgroundColor:"rgb(204,0,0)",
+    [`@media ${device.mobile}`]:{
+      padding:0
+    }
    
    },
 
@@ -150,11 +159,13 @@ const Login:React.FC<Props> = ({history}) =>{
        <Grid container spacing={1}>
         
 
-       <Grid item xs={6}>
+       <Grid item md={6}>
+           <Hidden smDown>
            <div className={classes.background}></div>
-         </Grid>
+           </Hidden>
+       </Grid>
         
-        <Grid item xs={6}>
+        <Grid item sm={12}md={6}>
               <div className={classes.root}>
                 
               <form onSubmit={handleSubmit} className={classes.form} autoComplete="off">

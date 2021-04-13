@@ -10,6 +10,7 @@ const Linky = styled(Link)`
     color: red;
     
   }
+  
 `;
 
 function Sidebar(){

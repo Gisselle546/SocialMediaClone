@@ -40,7 +40,7 @@ const Cart = () => {
     const IconWrapper = styled.div`
         justify-items:flex-end;
         margin-top:2rem;
-        margin-left:10rem
+        margin-left:10rem;
     `;
 
     const OrderWrapper = styled.div`
@@ -51,7 +51,8 @@ const Cart = () => {
      background:linear-gradient(129deg, rgba(214,107,28,1) 11%, rgba(224,29,29,1) 38%);
      @media ${device.mobile} { 
         margin:0rem;
-        width:100%
+        width:100%;
+        padding:0rem;
        }
     `;
 
